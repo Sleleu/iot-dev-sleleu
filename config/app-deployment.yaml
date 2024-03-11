@@ -16,7 +16,7 @@ spec:
         - name: wil
           image: wil42/playground:v1
           ports:
-            - containerPort: 80
+            - containerPort: 8888
 ---
 apiVersion: v1
 kind: Service
@@ -24,6 +24,6 @@ metadata:
   name: wil
 spec:
   ports:
-    - port: 80
+    - port: 8888
   selector:
     app: wil
